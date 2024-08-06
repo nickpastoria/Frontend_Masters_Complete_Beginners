@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+
+.main_head {
+  background: lightblue;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  display: grid;
+  border: 1px solid black;
+  width: 100%;
+  margin: 0px;
+}
+
+h1 {
+  margin-top: 0px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+a {
+  color: darkgreen;
+  font-size: 20px;
+  font-family: Ubuntu;
+}
+
+.blog_post {
+  justify-content: center;
+  outline: solid;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  background: lightcyan;
+  max-width: 800px;
+}
+
+.blog_post h2 {
+  font-family: sans-serif;
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+/*
+* Psuedo-classes are used to dynamically select
+* elements from within css. Here's one that selects
+* the top article and makes it red.
+*/
+.blog_post:first-of-type {
+  outline: solid;
+  outline-color: red;
+}
+
+.date {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: grey;
+}
+
+body {
+  background-image: url(https://st4.depositphotos.com/25580534/28781/v/450/depositphotos_287817078-stock-illustration-seamless-pattern-diagonal-squares-blue.jpg);
+}
+
+.blog_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
