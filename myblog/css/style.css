@@ -13,6 +13,17 @@
   margin: 0px;
 }
 
+.main_head table {
+  display: flex;
+  align-content: left;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.main_head th {
+  padding-left: 5px;
+}
+
 h1 {
   margin-top: 0px;
   font-weight: bold;
