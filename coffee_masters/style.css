@@ -23,7 +23,7 @@ img {
 
 h1 {
   font-family: cursive;
-  font-size: 4vh;
+  font-size: 25px;
 }
 
 h2 {
@@ -77,10 +77,6 @@ p {
   border-bottom: solid black 2px;
 }
 
-.item-container:last-child {
-  border-bottom: none;
-}
-
 .items-container {
   display: flex;
   flex-direction: column;
@@ -88,22 +84,34 @@ p {
   padding: 10px;
   padding-left: 15px;
   padding-right: 20px;
-  width: 300px;
+  margin: 15px;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-self: flex-start;
+}
+
+.item-container:last-child {
+  border-bottom: none;
+}
+
+.big-padding {
+  margin: 0px;
 }
 
 .checkout-container {
   background-color: blue;
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .subtotal-container {
   background-color: darkgreen;
-}
-
-.big-padding {
-  margin: 40px;
-  padding: 40px;
 }
 
 .no-height {

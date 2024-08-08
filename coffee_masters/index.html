@@ -39,14 +39,47 @@
         <div class="item-three item-container">
           <p class="quantity-three quantity-container">1x</p>
           <ul class="order-three order-container">
-            <li class="order-specs-one order-specs-container">Croissant</li>
+            <li class="order-specs-one order-specs-container">Cappucino</li>
             <li class="order-specs-two order-specs-container">Butter</li>
           </ul>
           <p class="price-one price">$2.45</p>
         </div>
       </div>
-      <div class="name-container"></div>
-      <div class="payment-container"></div>
+      <div class="inputs-container">
+        <div class="items-container">
+          <h2>NAME</h2>
+          <div class="input-container">
+            <p class="input-label">Name for order</p>
+            <input
+              type="text"
+              name="customer-name"
+              value="Insert Name"
+              class="fullwidth-input"
+            />
+          </div>
+        </div>
+        <div class="items-container">
+          <h2>PAYMENT</h2>
+          <div class="input-container">
+            <p class="input-label">Card number</p>
+            <input
+              type="number"
+              name="customer-card"
+              value="1234 5678 9012 3456"
+              class="fullwidth-input"
+            />
+          </div>
+          <div class="input-container">
+            <p class="input-label">CCV number</p>
+            <input
+              type="number"
+              name="customer-ccv"
+              value="1234 5678 9012 3456"
+              class="fullwidth-input"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <div class="subtotal-container big-padding"></div>
   </body>
