@@ -39,6 +39,7 @@ ul {
   list-style-type: none;
   padding: 0px;
   margin: 0px;
+  width: 300px;
 }
 
 li {
@@ -60,7 +61,6 @@ p {
 
 .price {
   text-align: right;
-  width: 200px;
   margin-right: 20px;
 }
 
@@ -72,7 +72,13 @@ p {
   align-content: flex-start;
   padding: 0px;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid black 2px;
+}
+
+.item-container:last-child {
+  border-bottom: none;
 }
 
 .items-container {
@@ -94,6 +100,7 @@ p {
 .subtotal-container {
   background-color: darkgreen;
 }
+
 .big-padding {
   margin: 40px;
   padding: 40px;
