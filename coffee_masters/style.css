@@ -2,14 +2,13 @@
 
 header {
   height: 70px;
-  background-color: red;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: #412315;
 }
 
 .logo-container {
-  background-color: green;
   display: flex;
   align-items: stretch;
   align-items: center;
@@ -24,6 +23,7 @@ img {
 h1 {
   font-family: cursive;
   font-size: 25px;
+  color: #e8ddb0;
 }
 
 h2 {
@@ -33,6 +33,7 @@ h2 {
   margin: 0px;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #a37e5a;
 }
 
 ul {
@@ -44,9 +45,11 @@ ul {
 
 li {
   padding-bottom: 5px;
+  color: #a37e5a;
 }
 
 li:first-child {
+  color: black;
   font-weight: bold;
   font-size: 20px;
 }
@@ -61,26 +64,25 @@ p {
 
 .price {
   text-align: right;
-  margin-right: 20px;
+  margin-right: 0px;
+  justify-self: flex-end;
+  font-weight: bold;
 }
 
 .item-container {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
   padding: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
   padding-bottom: 10px;
-  border-bottom: solid black 2px;
+  border-bottom: solid #a37e5a 2px;
 }
 
 .items-container {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-color: #eee1d5;
   padding: 10px;
   padding-left: 15px;
   padding-right: 20px;
@@ -105,15 +107,53 @@ p {
 }
 
 .checkout-container {
-  background-color: blue;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  padding-top: 35px;
+}
+
+td {
+  padding-bottom: 10px;
+}
+
+tr:last-child {
+  font-weight: bold;
+
+  td {
+    padding-top: 10px;
+  }
+}
+
+td:last-child {
+  padding-left: 200px;
+  text-align: right;
 }
 
 .subtotal-container {
-  background-color: darkgreen;
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.place-order-button {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  background-color: #deb993;
+  border: none;
 }
 
 .no-height {
   height: inherit;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1f;
+  margin: 0px;
+  padding: 0px;
+  background: #efefef;
 }
