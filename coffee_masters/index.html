@@ -1,102 +1,89 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Coffee Masters Checkout</title>
-    <link href="style.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <header>
-      <div class="logo-container">
-        <img src="src/logo.png" alt="logo" class="logo" />
-        <h1 class="logo-text no-height">Coffee Masters</h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Coffee Masters Checkout</title>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="logo.png" alt="logo" class="logo" />
+      <h1 class="logo-text no-height">Coffee Masters</h1>
+    </div>
+  </header>
+  <div class="checkout-container big-padding">
+    <div class="items-container">
+      <h2>ITEMS</h2>
+      <div class="item-one item-container">
+        <p class="quantity-one quantity-container">1x</p>
+        <ul class="order-one order-container">
+          <li class="order-specs-one order-specs-container">Cappuccino</li>
+          <li class="order-specs-two order-specs-container">Lite foam</li>
+        </ul>
+        <p class="price-one price">$3.35</p>
       </div>
-    </header>
-    <div class="checkout-container big-padding">
+      <div class="item-two item-container">
+        <p class="quantity-two quantity-container">1x</p>
+        <ul class="order-two order-container">
+          <li class="order-specs-one order-specs-container">Cappuccino</li>
+          <li class="order-specs-two order-specs-container">Lite Milk</li>
+          <li class="order-specs-three order-specs-container">
+            Double espresso
+          </li>
+        </ul>
+        <p class="price-one price">$3.35</p>
+      </div>
+      <div class="item-three item-container">
+        <p class="quantity-three quantity-container">1x</p>
+        <ul class="order-three order-container">
+          <li class="order-specs-one order-specs-container">Cappuccino</li>
+          <li class="order-specs-two order-specs-container">Butter</li>
+        </ul>
+        <p class="price-one price">$2.45</p>
+      </div>
+    </div>
+    <div class="inputs-container">
       <div class="items-container">
-        <h2>ITEMS</h2>
-        <div class="item-one item-container">
-          <p class="quantity-one quantity-container">1x</p>
-          <ul class="order-one order-container">
-            <li class="order-specs-one order-specs-container">Cappucino</li>
-            <li class="order-specs-two order-specs-container">Lite foam</li>
-          </ul>
-          <p class="price-one price">$3.35</p>
-        </div>
-        <div class="item-two item-container">
-          <p class="quantity-two quantity-container">1x</p>
-          <ul class="order-two order-container">
-            <li class="order-specs-one order-specs-container">Cappucino</li>
-            <li class="order-specs-two order-specs-container">Lite Milk</li>
-            <li class="order-specs-three order-specs-container">
-              Double espresso
-            </li>
-          </ul>
-          <p class="price-one price">$3.35</p>
-        </div>
-        <div class="item-three item-container">
-          <p class="quantity-three quantity-container">1x</p>
-          <ul class="order-three order-container">
-            <li class="order-specs-one order-specs-container">Cappucino</li>
-            <li class="order-specs-two order-specs-container">Butter</li>
-          </ul>
-          <p class="price-one price">$2.45</p>
+        <h2>NAME</h2>
+        <div class="input-container">
+          <p class="input-label">Name for order</p>
+          <input type="text" name="customer-name" value="Insert Name" class="fullwidth-input" />
         </div>
       </div>
-      <div class="inputs-container">
-        <div class="items-container">
-          <h2>NAME</h2>
-          <div class="input-container">
-            <p class="input-label">Name for order</p>
-            <input
-              type="text"
-              name="customer-name"
-              value="Insert Name"
-              class="fullwidth-input"
-            />
-          </div>
+      <div class="items-container">
+        <h2>PAYMENT</h2>
+        <div class="input-container">
+          <p class="input-label">Card number</p>
+          <input type="number" name="customer-card" value="1234 5678 9012 3456" class="fullwidth-input" />
         </div>
-        <div class="items-container">
-          <h2>PAYMENT</h2>
-          <div class="input-container">
-            <p class="input-label">Card number</p>
-            <input
-              type="number"
-              name="customer-card"
-              value="1234 5678 9012 3456"
-              class="fullwidth-input"
-            />
-          </div>
-          <div class="input-container">
-            <p class="input-label">CCV number</p>
-            <input
-              type="number"
-              name="customer-ccv"
-              value="1234 5678 9012 3456"
-              class="fullwidth-input"
-            />
-          </div>
+        <div class="input-container">
+          <p class="input-label">CCV number</p>
+          <input type="number" name="customer-ccv" value="1234 5678 9012 3456" class="fullwidth-input ccv-input" />
         </div>
       </div>
     </div>
-    <div class="subtotal-container big-padding">
-      <table class="subtotal-table">
-        <tr>
-          <td>Subtotal:</td>
-          <td>$9.65</td>
-        </tr>
-        <tr>
-          <td>Tax:</td>
-          <td>$0.82</td>
-        </tr>
-        <tr>
-          <td>Total:</td>
-          <td>$10.47</td>
-        </tr>
-      </table>
-    </div>
-    <button type="submit" class="place-order-button">Place order</button>
-  </body>
+  </div>
+  <div class="subtotal-container big-padding">
+    <table class="subtotal-table">
+      <tr>
+        <td>Subtotal:</td>
+        <td>$9.65</td>
+      </tr>
+      <tr>
+        <td>Tax:</td>
+        <td>$0.82</td>
+      </tr>
+      <tr>
+        <td>Total:</td>
+        <td>$10.47</td>
+      </tr>
+    </table>
+  </div>
+  <button type="submit" class="place-order-button">Place order</button>
+</body>
+
 </html>
