@@ -83,7 +83,7 @@ p {
 
 .item-container {
   display: grid;
-  grid-template-columns: 1fr 6fr 1fr;
+  grid-template-columns: 1fr 8fr 1fr;
   padding: 0px;
   margin-top: 5px;
   margin-bottom: 10px;
@@ -110,7 +110,7 @@ p {
 }
 
 .fullwidth-input {
-  background-color: var(--window-background);
+  background-color: rgba(0, 0, 0, 0);
   border-color: var(--tertiary-color);
   padding: 9px;
   border-radius: 25px;
@@ -130,7 +130,7 @@ p {
   position: absolute;
   left: 25px;
   top: -9px;
-  padding: 0px 2px;
+  padding: 0px 3px;
 }
 
 .item-container:last-child {
